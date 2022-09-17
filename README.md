@@ -7,19 +7,19 @@ Demo Sites:
 
 [click here](https://demo-callouts-developer-edition.ap17.force.com/AccountAPI/) to go to target site Url to where we make an external callout.
 
-Salesforce-JS custom connector
 
-Source org: https://deepsubha-2021-dev-ed.my.salesforce.com/
-Components:
-calloutDemo.vfp   /* UI made on visualforce page */
-CalloutDemoController.apxc    /* controller class */
-AccountAPISFToSF.apxc   /* main callout class */
-AccountApiGetResponse  /* wrapper class */
+Salesforce-JS custom connector ( Code Base summary)<br />
+Source org: https://deepsubha-2021-dev-ed.my.salesforce.com/<br />
+Components:<br />
+calloutDemo.vfp   /* UI made on visualforce page */<br />
+CalloutDemoController.apxc    /* controller class */<br />
+AccountAPISFToSF.apxc   /* main callout class */<br />
+AccountApiGetResponse  /* wrapper class */<br />
 
-Target org: https://deepsubha16-dev-ed.my.salesforce.com/
-Components:
-Account_Api.vfp /* UI page to see available accounts */
-Account_APIController.apxc /* controller class */
-AccountApi.apxc  /* expose API for Account */
+Target org: https://deepsubha16-dev-ed.my.salesforce.com/<br />
+Components:<br />
+Account_Api.vfp /* UI page to see available accounts */<br />
+Account_APIController.apxc /* controller class */<br />
+AccountApi.apxc  /* expose API for Account */<br />
 
 

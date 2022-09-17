@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>CalloutDemoController</members>
-        <members>AccountAPISFToSF</members>
-        <members>AccountApiGetResponse</members>
+        <members>AccountApi</members>
+        <members>Account_APIController</members>
         <name>ApexClass</name>
     </types>
     <types>
-        <members>calloutDemo</members>
+        <members>Account_Api</members>
         <name>ApexPage</name>
     </types>
 

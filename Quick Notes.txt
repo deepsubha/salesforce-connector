@@ -7,6 +7,8 @@ Components:
 	AccountAPISFToSF.apxc   /* main callout class */
 	AccountApiGetResponse  /* wrapper class */
 	
+Site URL: https://apicallouts-developer-edition.ap24.force.com/
+	
 Target org: https://deepsubha16-dev-ed.my.salesforce.com/
 Components:
 	Account_Api.vfp /* UI page to see available accounts */

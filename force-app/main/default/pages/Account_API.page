@@ -1,0 +1,45 @@
+<apex:page controller="Account_APIController">
+    <apex:slds />
+
+    <script type="text/javascript">
+    	var publicIp;
+    	function getPublicIP(json) {  
+            publicIp = json.ip;
+        }
+        window.onload = () =>{
+            if(localStorage.getItem("userId") == null){
+            	localStorage.setItem("userId", 'TestUser_'+publicIp.substring(0,15));
+        	}
+        	assignUserId(localStorage.getItem("userId"));
+        }
+    </script> 
+    <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getPublicIP"></script>
+    
+    <apex:form >
+        <apex:actionFunction action="{!getTestUser_Id}" name="assignUserId" rerender="records">
+            <apex:param name="userIp" value="" assignTo="{!TestUser_Id}"/>
+        </apex:actionFunction>
+    </apex:form>
+        
+    <p>
+        Target Org
+    </p>
+	<h1 style="font-size: 25px;">
+        Created Account(s)
+    </h1>
+    <br />
+      
+    <apex:outputPanel title="" id="error">
+     <apex:pageMessages ></apex:pageMessages>
+     </apex:outputPanel>
+  
+    <apex:pageBlock title="Accounts" id="records">
+    <apex:pageblockTable value="{!accList }" var="acc">
+          <apex:column value="{!acc.Id}"/>
+          <apex:column value="{!acc.Name}"/>
+          <apex:column value="{!acc.Phone}"/>
+          <apex:column value="{!acc.Website}"/>
+       </apex:pageblockTable>
+    </apex:pageBlock>
+    
+</apex:page>
